@@ -1,0 +1,113 @@
+/* #Animation
+================================================== */
+
+.animation {
+	position: relative;
+	height: 250px;
+	width: 245px;
+	margin: 0 auto;
+}
+
+.sun {
+	width: 160px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	-webkit-animation: spin 32s infinite linear;
+	-moz-animation: spin 32s infinite linear;
+	animation: spin 32s infinite linear;
+}
+
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+}
+
+
+.cloud {
+	width: 160px;
+	position: absolute;
+	top: 56px;
+	left: 45px;
+}
+
+.raindrop-holder {
+	-webkit-transform:rotate(12deg);
+	-moz-transform:rotate(12deg);
+	transform:rotate(12deg); 
+}
+
+.raindrop-holder.one {
+	position: absolute;
+	top: 85px;
+	left: 100px;
+}
+
+.raindrop-holder.two {
+	position: absolute;
+	top: 100px;
+	left: 140px;
+}
+
+.raindrop-holder.three {
+	position: absolute;
+	top: 110px;
+	left: 160px;px;
+}
+
+.raindrop {
+	width: 40px;
+
+	-webkit-animation: rainfall 0.75s infinite linear;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation: rainfall 0.75s infinite linear;
+	-moz-animation-fill-mode: forwards;
+	animation: rainfall 0.75s infinite linear;
+	animation-fill-mode: forwards;
+}
+
+.raindrop-holder.two .raindrop {
+	-webkit-animation-delay: 0.35s;
+	-moz-animation-delay: 0.35s;
+	animation-delay: 0.35s;
+	width: 20px;
+}
+
+.raindrop-holder.three .raindrop {
+	-webkit-animation-delay: 0.65s;
+	-moz-animation-delay: 0.65s;
+	animation-delay: 0.65s;
+	width: 30px;
+}
+
+@-webkit-keyframes rainfall {
+   0% { -webkit-transform:  translateY(0px); opacity:1; }
+   88% { -webkit-transform:  translateY(88px); opacity:1; }
+   94% { -webkit-transform:  translateY(94px); opacity:1; }
+   100% { -webkit-transform:  translateY(100px); opacity:0; }
+}
+
+@-moz-keyframes rainfall {
+   0% { -moz-transform:  translateY(0px); opacity:1; }
+   88% { -moz-transform:  translateY(88px); opacity:1; }
+   94% { -moz-transform:  translateY(94px); opacity:1; }
+   100% { -moz-transform:  translateY(100px); opacity:0; }
+}
+
+@keyframes rainfall {
+   0% { transform:  translateY(0px); opacity:1; }
+   88% { transform:  translateY(88px); opacity:1; }
+   94% { transform:  translateY(94px); opacity:1; }
+   100% { transform:  translateY(100px); opacity:0; }
+}

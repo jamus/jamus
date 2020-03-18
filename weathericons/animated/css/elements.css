@@ -1,0 +1,85 @@
+.wi {
+	display: block;
+	position: relative;
+	height: 75px;
+	width: 100px;
+	overflow: hidden;
+}
+
+.sun {
+	position: absolute;
+	top: -27px;
+	left: -13px;
+}
+
+.cloud {
+	position: absolute;
+	top: -17px;
+	left: 0;
+
+}
+
+
+
+.raindrop-holder {
+	-webkit-transform:rotate(12deg);
+	-moz-transform:rotate(12deg);
+	transform:rotate(12deg); 
+}
+
+/* heavy rain */
+
+.heavy-rain .raindrop-holder.one {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+
+.heavy-rain .raindrop-holder.two {
+	position: absolute;
+	top: 30px;
+	left: 47px;
+}
+
+.heavy-rain .raindrop-holder.three {
+	position: absolute;
+	top: 30px;
+	left: 55px;
+}
+
+/* rain_shower_heavy */
+
+
+
+.small-raindrop {
+	height: 14px;
+}
+
+.mid-raindrop {
+	height: 18px;
+}
+
+.big-raindrop {
+	height: 16px;
+}
+
+
+
+
+
+
+
+
+
+.rain_heavy {
+/*General*/
+transform: scale(0.65);
+/*Firefox*/
+-moz-transform: scale(0.65);
+/*Microsoft Internet Explorer*/
+-ms-transform: scale(0.65);
+/*Chrome, Safari*/
+-webkit-transform: scale(0.65);
+/*Opera*/
+-o-transform: scale(0.65);
+}

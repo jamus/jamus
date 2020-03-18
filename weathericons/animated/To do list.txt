@@ -1,0 +1,6 @@
+##To Do list (maybe)
+
+- Resize the current working model to a more appropriate size for including in a UI.
+- Use javascript to insert the icon into required element using class / id
+- Make this easy
+- Reuse as many elements / resources as possible E.g. one rain drop.
